@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="unnamed">
+    <output-path>$PROJECT_DIR$/../../../apache-tomcat-7.0.52/webapps/leXiang</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="website" />
+          <element id="jpa-descriptors" facet="website/jpa/JPA" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib1" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="website/web/Web" />
+    </root>
+  </artifact>
+</component>

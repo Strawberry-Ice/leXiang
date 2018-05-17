@@ -1,0 +1,396 @@
+﻿html,
+body {
+    width: 100%;
+    height: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    background: url('../images/bg.jpg') no-repeat 0 0;
+    background-size: 100% 100%;
+}
+body.listpage {
+    background: #fff;
+}
+body.awardpage {
+    background: url('../images/bg.jpg') no-repeat 0 0;
+    background-size: 100% 100%;
+}
+.titlewrap {
+	position:relative;
+}
+.title {
+	width:100%;
+}
+.titleicon {
+	position: absolute;
+	  top: 55%;
+	  left: 52%;
+	  width: 13%;
+}
+.logo {
+    /*padding-top: 20px;*/
+}
+.btn1 img.here {
+	position:absolute;
+	top:-50px;
+	left:70%;
+	width:50px;
+}
+.btn1 {
+display:none;
+    position: absolute;
+    left: 50%;
+    bottom: 90px;
+    margin-left: -112px;
+    width: 225px;
+    height: 51px;
+}
+.btn1 img {
+    width: 100%;
+    height: 100%;
+}
+.btn2 {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    margin-left: -74px;
+    width: 148px;
+    height: 34px;
+}
+.btn2 img {
+    width: 100%;
+    height: 100%;
+}
+.btn3 {
+    position: absolute;
+    left: 50%;
+    bottom: 110px;
+    margin-left: -132px;
+    width: 264px;
+    height: 42px;
+}
+.btn3 img {
+    width: 100%;
+    height: 100%;
+}
+.btn4 {
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    margin-left: -132px;
+    width: 264px;
+    height: 42px;
+}
+.btn4 img {
+    width: 100%;
+    height: 100%;
+}
+.outer {
+	/*display:none;*/
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    margin: -110px 0 0 -160px;
+    width: 320px;
+    height: 250px;
+    /*border-radius: 220px;*/
+    background: url("../images/outer.png") no-repeat 0 0;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    z-index: 99;
+}
+.outaward {
+	display:none;
+    /*display:none;*/
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    margin: -110px 0 0 -160px;
+    width: 320px;
+    height: 250px;
+    /*border-radius: 220px;*/
+    background: url("../images/award.png") no-repeat 0 0;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    z-index: 99;
+}
+.inaward {
+    padding-top: 100px;
+    text-align: center;
+    color: #ffffff;
+}
+.outer .dotted li {
+    position: absolute;
+
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    list-style: none;
+    background-color: #ff9c32;
+}
+.outer .dotted li:nth-child(1){
+    left: 108px;
+    top: 3px;
+}
+.outer .dotted li:nth-child(2){
+    left: 178px;
+    top: 33px;
+}
+.outer .dotted li:nth-child(3){
+    left: 208px;
+    top: 108px;
+}
+.outer .dotted li:nth-child(4){
+    left: 178px;
+    top: 178px;
+}
+.outer .dotted li:nth-child(5){
+    left: 108px;
+    top: 208px;
+}
+.outer .dotted li:nth-child(6){
+    left: 33px;
+    top: 178px;
+}
+.outer .dotted li:nth-child(7){
+    left: 3px;
+    top: 108px;
+}
+.outer .dotted li:nth-child(8){
+    left: 33px;
+    top: 33px;
+}
+.icon_shake1 {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+.icon_shake2 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.innerwrap {
+    position: absolute;
+    left: 18px;
+    top: 18px;
+    width: 184px;
+    height: 184px;
+    border-radius: 220px;
+    z-index: 99;
+    overflow: hidden;
+}
+.inner {
+    position: absolute;
+    left: -128px;
+    top: -18px;
+    width: 440px;
+    height: 440px;
+    background: url("../images/inner.png") no-repeat 110px 0;
+    -webkit-background-size: 50% 50%;
+    background-size: 50% 50%;
+    z-index: 99;
+}
+
+
+@keyframes yaoyiyao {
+    from {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}
+@-webkit-keyframes yaoyiyao {
+    from {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}
+@-o-keyframes yaoyiyao {
+    from {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}
+@-moz-keyframes yaoyiyao {
+    from {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}
+
+#myModal1 .modal-header {
+    text-align: center;
+    background-color: #ff7113;
+    border-radius: 6px 6px 0 0;
+    border: none;
+    color: #ffffff;
+}
+#myModal1 .modal-footer {
+    text-align: center;
+    border: none;
+}
+#myModal1 .modal-footer .btn {
+    width: 150px;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    background-color: #f96c2e;
+    -webkit-box-shadow: 1px 1px 1px #cc511a;
+    -moz-box-shadow: 1px 1px 1px #cc511a;
+    box-shadow: 1px 1px 1px #cc511a;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 999;
+}
+.hongbao {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 218px;
+    height: 240px;
+    margin-left: -109px;
+    margin-top: -120px;
+}
+.listpage .list {
+    /*margin: 0 -15px;*/
+    padding: 0;
+    list-style: none;
+}
+.listpage .list li {
+    margin-top: 10px;
+    padding: 30px 10px;
+    background: url("../images/list_bg_prize.jpg") no-repeat center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    color: #ffffff;
+    /*border-bottom: 1px solid #e6b2b5;*/
+}
+.listpage .list li.done {
+    background: url("../images/list_bg_prize_done.png") no-repeat center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.listpage .list li a {
+    color: #ffffff;
+}
+.listpage .list li .thumwrap {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50px;
+    /*background-color: #022d56;*/
+}
+.listpage .list li .thumwrap img {
+    width: 40px;
+    height: 40px;
+    margin: 5px 0 0 5px;
+    border-radius: 40px;
+}
+.listpage .list li .exbtn {
+    width: 60px;
+    line-height: 24px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #ff7113;
+}
+.awardpage .snbg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 265px;
+    height: 300px;
+    margin: -130px 0 0 -132px;
+    background: url("../images/snbg.png") 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.awardpage .snbg .wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 220px;
+    height: 240px;
+    margin: -80px 0 0 -110px;
+}
+.awardpage .snbg .wrap .name {
+    text-align: center;
+    color: #ff7113;
+    font-size: 12px;
+}
+.awardpage .snbg .wrap .sn {
+    margin: 10px 0;
+    padding: 10px;
+    color: #fff;
+    background-color: #ff7113;
+}
+.awardpage .snbg .wrap .rule {
+    font-size: 12px;
+}
+.goback {
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+}
+/*提交*/
+.submitpage .submitText {
+    margin-top: 150px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    height: 42px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.submitpage .submitText input {
+    height: 40px;
+    border: none;
+}
+.submitpage .submitText .btn {
+    width: 60px;
+    height: 40px;
+    border: none;
+    background-color: #ff7113;
+    border-radius: 0 4px 4px 0;
+    color: #ffffff;
+}
+.submitpage .submitresult {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    text-align: center;
+    color: #666;
+}
+.submitpage .submitBtn {
+    color: #fff;
+    background-color: #ff7113;
+    border: 1px solid #ff7113;
+    letter-spacing: 10px;
+}

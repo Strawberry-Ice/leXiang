@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="default.main" template="/layout/main.jsp">
+		<put-attribute name="header" value="/layout/header.jsp" />
+		<put-attribute name="left" value="/layout/left.jsp" />
+		<put-attribute name="main" value="" />
+		<put-attribute name="footer" value="/layout/footer.jsp" />
+	</definition>
+
+  
+  <definition name="default.application" extends="default.main" >
+  	<put-attribute name="title" value="报名数据" />
+    <put-attribute name="main" value="/jsp/application.jsp" />
+  </definition>
+  
+  <definition name="default.pay" extends="default.main" >
+  	<put-attribute name="title" value="支付积分" />
+    <put-attribute name="main" value="/jsp/pay.jsp" />
+  </definition>
+  
+  <definition name="default.check" extends="default.main" >
+  	<put-attribute name="title" value="活动审核" />
+    <put-attribute name="main" value="/jsp/check.jsp" />
+  </definition>
+
+	<definition name="default.notice" extends="default.main">
+		<put-attribute name="title" value="社区公告" />
+		<put-attribute name="main" value="/jsp/notice.jsp" />
+	</definition>
+	<definition name="default.notice.add" extends="default.main">
+		<put-attribute name="title" value="社区公告" />
+		<put-attribute name="main" value="/jsp/notice_add_or_edit.jsp" />
+	</definition>
+
+	<definition name="default.active.manage" extends="default.main">
+		<put-attribute name="title" value="活动管理" />
+		<put-attribute name="main" value="/jsp/activity.jsp" />
+	</definition>
+	
+	<definition name="default.active.comment" extends="default.main">
+		<put-attribute name="title" value="活动管理" />
+		<put-attribute name="main" value="/jsp/comment.jsp" />
+	</definition>
+
+
+	<definition name="default.active.add" extends="default.main">
+		<put-attribute name="title" value="活动管理" />
+		<put-attribute name="main" value="/jsp/activity_add_or_edit.jsp" />
+	</definition>
+
+	<definition name="default.recruitment.manage" extends="default.main">
+		<put-attribute name="title" value="招募管理" />
+		<put-attribute name="main" value="/jsp/recruitment.jsp" />
+	</definition>
+	
+	<definition name="default.recruitment.comment" extends="default.main">
+		<put-attribute name="title" value="招募管理" />
+		<put-attribute name="main" value="/jsp/comment.jsp" />
+	</definition>
+
+	<definition name="default.recruitment.add" extends="default.main">
+		<put-attribute name="title" value="招募管理" />
+		<put-attribute name="main" value="/jsp/recruitment_add_or_edit.jsp" />
+	</definition>
+	
+	<definition name="default.assistant.manage" extends="default.main">
+		<put-attribute name="title" value="二手管理" />
+		<put-attribute name="main" value="/jsp/assistant.jsp" />
+	</definition>
+	
+	<definition name="default.assistant.manage.view" extends="default.main">
+		<put-attribute name="title" value="二手管理" />
+		<put-attribute name="main" value="/jsp/assistant_view.jsp" />
+	</definition>
+	
+	<definition name="default.cooperation.manage" extends="default.main">
+		<put-attribute name="title" value="互助管理" />
+		<put-attribute name="main" value="/jsp/cooperation.jsp" />
+	</definition>
+	
+	<definition name="default.cooperation.manage.view" extends="default.main">
+		<put-attribute name="title" value="互助管理" />
+		<put-attribute name="main" value="/jsp/cooperation_view.jsp" />
+	</definition>
+	
+	<definition name="default.check.manage.view" extends="default.main">
+		<put-attribute name="title" value="活动审核" />
+		<put-attribute name="main" value="/jsp/check_view.jsp" />
+	</definition>
+	
+
+
+	<definition name="default.notice" extends="default.main">
+		<put-attribute name="title" value="社区公告" />
+		<put-attribute name="main" value="/jsp/notice.jsp" />
+	</definition>
+	<definition name="default.notice.add" extends="default.main">
+		<put-attribute name="title" value="社区公告" />
+		<put-attribute name="main" value="/jsp/notice_add_or_edit.jsp" />
+	</definition>
+
+	<definition name="*.*ist" extends="default.list">
+		<put-attribute name="main"
+			value="/WEB-INF/jsp/karluto/{1}/{1}_{2}ist.jsp" />
+	</definition>
+
+	<definition name="*.*" template="/WEB-INF/jsp/template/error.jsp">
+	</definition>
+
+	<definition name="default.weichat.community.add" extends="default.weichat">
+		<put-attribute name="header" value="/jsp/weichat/layout/header_for_add.jsp" />
+		<put-attribute name="content" value="/jsp/weichat/community.jsp" />
+	</definition>
+	
+	
+	<definition name="default.user.edit" extends="default.main">
+		<put-attribute name="title" value="编辑用户" />
+		<put-attribute name="main" value="/jsp/user_edit.jsp" />
+	</definition>
+
+
+	<definition name="user.list" extends="default.main">
+		<put-attribute name="title" value="用户管理" />
+		<put-attribute name="main" value="/jsp/user_list.jsp" />
+	</definition>
+	
+	<definition name="default.user.view" extends="default.main">
+		<put-attribute name="title" value="用户管理" />
+		<put-attribute name="main" value="/jsp/user_view.jsp" />
+	</definition>
+
+	<definition name="default.user.create" extends="default.main">
+		<put-attribute name="title" value="新增用户" />
+		<put-attribute name="main" value="/jsp/user_create.jsp" />
+	</definition>
+
+	<definition name="user.profile" extends="default.main">
+		<put-attribute name="title" value="个人信息" />
+		<put-attribute name="main" value="/jsp/user_profile.jsp" />
+	</definition>
+
+	<definition name="user.password" extends="default.main">
+		<put-attribute name="title" value="个人信息" />
+		<put-attribute name="main" value="/jsp/user_password.jsp" />
+	</definition>
+
+	<definition name="shop_item.edit" extends="default.main">
+		<put-attribute name="title" value="编辑商品" />
+		<put-attribute name="main" value="/jsp/score/shop_item_edit.jsp" />
+	</definition>
+
+	<definition name="shop_item.view" extends="default.main">
+		<put-attribute name="title" value="编辑商品" />
+		<put-attribute name="main" value="/jsp/score/shop_item_view.jsp" />
+	</definition>
+
+	<definition name="shop_item.list" extends="default.main">
+		<put-attribute name="title" value="商品列表" />
+		<put-attribute name="main" value="/jsp/score/shop_item_list.jsp" />
+	</definition>
+
+
+	<definition name="shop_item.create" extends="default.main">
+		<put-attribute name="title" value="新增商品" />
+		<put-attribute name="main" value="/jsp/score/shop_item_create.jsp" />
+	</definition>
+
+
+	<definition name="score.admin.list" extends="default.main">
+		<put-attribute name="title" value="积分查询" />
+		<put-attribute name="main" value="/jsp/score/score_admin_list.jsp" />
+	</definition>
+	
+	<definition name="score.user.list" extends="default.main">
+		<put-attribute name="title" value="积分查询" />
+		<put-attribute name="main" value="/jsp/score/score_user_list.jsp" />
+	</definition>
+
+
+	<definition name="score.transfer" extends="default.main">
+		<put-attribute name="title" value="积分划拨" />
+		<put-attribute name="main" value="/jsp/score/score_transfer.jsp" />
+	</definition>
+
+
+	<definition name="exchange.list" extends="default.main">
+		<put-attribute name="title" value="礼品兑换" />
+		<put-attribute name="main" value="/jsp/score/exchange_list.jsp" />
+	</definition>
+	
+	<definition name="score.exchange.list" extends="default.main">
+		<put-attribute name="title" value="积分兑换查询" />
+		<put-attribute name="main" value="/jsp/score/score_exchange_list.jsp" />
+	</definition>
+	
+	<definition name="default.weichat" template="/jsp/weichat/layout/activityContent.jsp">
+		<put-attribute name="header" value="/jsp/weichat/layout/header.jsp" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="footer" value="/jsp/weichat/layout/footer.jsp" />
+	</definition>
+	
+	<definition name="default.weichat.community" extends="default.weichat">
+		<put-attribute name="title" value="我的社区" />
+		<put-attribute name="content" value="/jsp/weichat/community.jsp" />
+	</definition>
+	
+	<definition name="default.weichat.community.add" extends="default.weichat">
+		<put-attribute name="header" value="/jsp/weichat/layout/header_for_add.jsp" />
+		<put-attribute name="content" value="/jsp/weichat/community.jsp" />
+	</definition>
+	
+	<definition name="default.weichat.square" extends="default.weichat">
+		<put-attribute name="title" value="附近有啥" />
+		<put-attribute name="content" value="/jsp/weichat/square.jsp" />
+	</definition>
+	
+	<definition name="default.weichat.notice" extends="default.weichat">
+		<put-attribute name="content" value="/jsp/weichat/notice_article.jsp" />
+	</definition>
+	
+	<definition name="default.weichat.activity" extends="default.weichat">
+		<put-attribute name="content" value="/jsp/weichat/activity_article.jsp" />
+	</definition>
+	
+	<definition name="default.weichat.apply" extends="default.weichat">
+		<put-attribute name="content" value="/jsp/weichat/apply.jsp" />
+	</definition>
+	
+	<definition name="default.weichat.recruitment" extends="default.weichat">
+		<put-attribute name="content" value="/jsp/weichat/recruitment_article.jsp" />
+	</definition>
+	
+	<definition name="default.weichat.activity.manager" extends="default.weichat">
+		<put-attribute name="content" value="/jsp/weichat/activity_create.jsp" />
+	</definition>
+	
+	<definition name="default.weichat.recruitment.manager" extends="default.weichat">
+		<put-attribute name="content" value="/jsp/weichat/recruitment_create.jsp" />
+	</definition>
+	
+	<definition name="default.weichat.assistant.manager" extends="default.weichat">
+		<put-attribute name="content" value="/jsp/weichat/assistant_create.jsp" />
+	</definition>
+	
+	<definition name="default.weichat.assistant" extends="default.weichat">
+		<put-attribute name="content" value="/jsp/weichat/assistant_article.jsp" />
+	</definition>
+	
+	<definition name="default.weichat.cooperation.manager" extends="default.weichat">
+		<put-attribute name="content" value="/jsp/weichat/cooperation_create.jsp" />
+	</definition>
+	
+	<definition name="default.weichat.cooperation" extends="default.weichat">
+		<put-attribute name="content" value="/jsp/weichat/cooperation_article.jsp" />
+	</definition>
+	
+	<definition name="default.org.edit" extends="default.main">
+		<put-attribute name="title" value="编辑机构" />
+		<put-attribute name="main" value="/jsp/org/org_edit.jsp" />
+	</definition>
+
+
+	<definition name="default.org.view" extends="default.main">
+		<put-attribute name="title" value="编辑机构" />
+		<put-attribute name="main" value="/jsp/org/org_view.jsp" />
+	</definition>
+
+	<definition name="org.list" extends="default.main">
+		<put-attribute name="title" value="机构管理" />
+		<put-attribute name="main" value="/jsp/org/org_list.jsp" />
+	</definition>
+
+
+	<definition name="default.org.create" extends="default.main">
+		<put-attribute name="title" value="新增机构" />
+		<put-attribute name="main" value="/jsp/org/org_create.jsp" />
+	</definition>
+	
+	
+	<definition name="tools.create.activity" extends="default.main">
+		<put-attribute name="title" value="发布活动" />
+		<put-attribute name="main" value="/jsp/tools/create_activity.jsp" />
+	</definition>
+	
+	<definition name="tools.create.recruitment" extends="default.main">
+		<put-attribute name="title" value="发布招募" />
+		<put-attribute name="main" value="/jsp/tools/create_recruitment.jsp" />
+	</definition>
+	
+	<definition name="tools.create.assistant" extends="default.main">
+		<put-attribute name="title" value="发布二手" />
+		<put-attribute name="main" value="/jsp/tools/create_assistant.jsp" />
+	</definition>
+	
+	<definition name="tools.create.cooperation" extends="default.main">
+		<put-attribute name="title" value="发布互助" />
+		<put-attribute name="main" value="/jsp/tools/create_cooperation.jsp" />
+	</definition>
+	
+	<definition name="default.active.assistant" extends="default.main">
+		<put-attribute name="title" value="二手管理" />
+		<put-attribute name="main" value="/jsp/comment.jsp" />
+	</definition>
+	
+	<definition name="default.active.cooperation" extends="default.main">
+		<put-attribute name="title" value="互助管理" />
+		<put-attribute name="main" value="/jsp/comment.jsp" />
+	</definition>
+	
+	<definition name="default.active.create.comment" extends="default.main">
+		<put-attribute name="title" value="活动管理" />
+		<put-attribute name="main" value="/jsp/createComment.jsp" />
+	</definition>
+	
+	<definition name="default.recruitment.create.comment" extends="default.main">
+		<put-attribute name="title" value="招募管理" />
+		<put-attribute name="main" value="/jsp/createComment.jsp" />
+	</definition>
+	
+	<definition name="default.active.create.assistant" extends="default.main">
+		<put-attribute name="title" value="二手管理" />
+		<put-attribute name="main" value="/jsp/createComment.jsp" />
+	</definition>
+	
+	<definition name="default.active.create.cooperation" extends="default.main">
+		<put-attribute name="title" value="互助管理" />
+		<put-attribute name="main" value="/jsp/createComment.jsp" />
+	</definition>
+	
+	<definition name="tools.create.user" extends="default.main">
+		<put-attribute name="title" value="发布互助" />
+		<put-attribute name="main" value="/jsp/tools/create_user.jsp" />
+	</definition>
+	
+</tiles-definitions>

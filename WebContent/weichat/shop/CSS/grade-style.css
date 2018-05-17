@@ -1,0 +1,248 @@
+.body{
+    width: 100%;
+    font-family: 微软雅黑;
+    background-color: #f9f9f9;
+}
+.head{
+    width: 100%;
+    height: 50px;
+    color: #ffffff;
+    font-size: 14px;
+}
+.head li{
+    display: inline;
+}
+.head .text{
+    width: 30%;
+    height: 30px;
+    background-color: #2a8acd;
+    text-align: center;
+    float: left;
+    padding-top: 20px;
+}
+.head .on .text {
+    background-color: #0c609b;
+}
+.head .text1{
+    width: 40%;
+}
+.bottom{
+    width: 100%;
+    height: 510px;
+    background-color: #f9f9f9;
+}
+.bottom .up{
+    width: 100%;
+    height: 105px;
+    padding-top: 5px;
+}
+.bottom .up li{
+    width: 95%;
+    height: 23px;
+    border-top: 1px solid #c3c3c3;
+    color: #0c609b;
+    font-size: 10px;
+    padding-top: 12px;
+    padding-left: 5%;
+    background-color: #ffffff;
+}
+.bottom .up .special{
+    border-bottom: 1px solid #c3c3c3;
+}
+.bottom .up .text{
+    font-size: 12px;
+    color: black;
+    margin-left: 100px;
+    margin-top: -13px;
+}
+.bottom .middle1{
+    width: 100%;
+    height: 15px;
+    text-align: center;
+    color: #2a8acd;
+    font-size: 12px;
+    padding-top: 15px;
+}
+.bottom .middle2{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+}
+.bottom .middle2 ul{
+    border-bottom: 1px solid #c3c3c3;
+}
+.bottom .middle2 li{
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid #c3c3c3;
+    background-color: #ffffff;
+}
+.bottom .middle2 li .left{
+    width: 20%;
+    height: 45px;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 15px;
+}
+.bottom .middle2 li .right{
+    width: 50%;
+    height: 60px;
+    font-size: 12px;
+    color: black;
+    margin-left: 30%;
+    margin-top: -35px;
+}
+.bottom .middle2 li select {
+    background-color: transparent;
+    -webkit-appearance: none;
+    border: none;
+    color: #abcae7;
+    font-size: 24px;
+    text-align: center;
+}
+.bottom .middle2 li:nth-child(2n+1) .left{
+    background-color: #4ea7e5;
+}
+.bottom .middle2 li:nth-child(2n) .left{
+    background-color: #2a8acd;
+}
+.bottom .down .butt{
+    width: 250px;
+    height: 40px;
+    position: relative;
+    margin: 0 auto;
+    top: 15px;
+}
+.bottom .down input{
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    border: 0px;
+    background-color: #ff3e3f;
+    text-align: center;
+    color: #ffffff;
+}
+
+/** 项目评分 **/
+.cover1{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    top: 0;
+    font-family: 微软雅黑;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+.cover1 .cover3{
+    background-color: #ffffff;
+    width: 90%;
+    height: 400px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.cover1 .up .close img{
+    margin-left: 90%;
+    padding-top: 17px;
+    padding-bottom: 14px;
+}
+.cover1 .down ul{
+    border-bottom: 1px solid #c3c3c3;
+}
+.cover1 .down li{
+    width: 100%;
+    height: 30px;
+    border-top: 1px solid #c3c3c3;
+    text-align: center;
+    padding-top: 20px;
+}
+.cover1 .down li:nth-child(3){
+    color: #ff4243;
+}
+.cover1 .down .butt{
+    width: 250px;
+    height: 40px;
+    position: relative;
+    margin: 0 auto;
+    top: 10px;
+}
+.cover1 .down .butt input{
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    border: 0px;
+    background-color: #ff3e3f;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+}
+
+/** 评分完毕 **/
+
+.cover2{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    top: 0;
+    font-family: 微软雅黑;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+.cover2 .cover4{
+    background-color: #ffffff;
+    width: 90%;
+    height: 300px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.cover2 .up .close img{
+    margin-left: 90%;
+    padding-top: 17px;
+    padding-bottom: 14px;
+}
+.cover2 .up .HR{
+    width: 93%;
+    padding-left: 3%;
+}
+.cover2 .down p{
+    font-size: 16px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 25px;
+    line-height: 25px;
+}
+.cover2 .down .butt1{
+    width: 250px;
+    height: 40px;
+    position: relative;
+    margin: 0 auto;
+    top: 30px;
+}
+.cover2 .down .butt1 input{
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    border: 0px;
+    background-color: #4ea7e5;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+}
+.cover2 .down .butt2{
+    width: 250px;
+    height: 40px;
+    position: relative;
+    margin: 0 auto;
+    top: 40px;
+}
+.cover2 .down .butt2 input{
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    border: 0px;
+    background-color: #ff3e3f;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+}

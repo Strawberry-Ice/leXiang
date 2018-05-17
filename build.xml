@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="smilecommunity"  default="dist" basedir=".">
+<property name="build.dir" value="build" description="输出目录"/>
+<property name="build.web.dir" value="${build.dir}/WEB-INF" description="web配置输出目录"/>
+<property name="build.web.class.dir" value="${build.web.dir}/classes" description="web类输出目录"/>
+<property name="build.web.lib.dir" value="${build.web.dir}/lib" description="web引用jar输出目录"/>
+<property name="src.dir" value="src" description="源代码目录"/>
+<property name="webRoot.dir" value="${basedir}/WebContent" />  
+<property name="lib.dir" value="${webRoot.dir}/WEB-INF/lib" /> 
+<property name="encoding" value="utf-8" description="文件编码"/>
+
+<path id="project.classpath">
+<fileset dir="${lib.dir}">  
+           <include name="*.jar" /> 
+		
+</fileset>  
+<pathelement path="${basedir}/WebContent/WEB-INF/lib"/>
+</path>
+
+<target name="init">
+<delete dir="${build.dir}"/>
+<mkdir dir="${build.dir}"/>
+<mkdir dir="${build.web.dir}"/>
+<mkdir dir="${build.web.lib.dir}"/>
+<mkdir dir="${build.web.class.dir}"/> 
+</target>
+
+<target name="compile" depends="init">
+
+<javac   destdir="${build.web.class.dir}" source="1.7" target="1.7" debug="on" 
+deprecation="false" optimize="false" failonerror="true" srcdir="${src.dir}" >
+   <compilerarg line="-encoding UTF-8"/>
+   <classpath refid="project.classpath" ></classpath>
+</javac> 
+
+<copy todir="${build.web.class.dir}">
+<!-- 复制源代码目录中所有的非java文件 -->
+<fileset dir="${src.dir}"  excludes="**/*.java">
+</fileset>
+</copy>
+  
+<copy todir="${build.dir}">
+<!-- WebContent目录中所有的非java文件 -->
+<fileset dir="${webRoot.dir}" excludes="**/*.class" >
+</fileset>
+</copy>
+
+</target>
+
+<target name="main" depends="init,compile" />
+<target name="dist" depends="main" description="将工程打成war包">
+<war destfile="${build.dir}/${ant.project.name}.war" basedir="${build.dir}" webxml="${build.web.dir}/web.xml"/>
+</target>
+</project>
